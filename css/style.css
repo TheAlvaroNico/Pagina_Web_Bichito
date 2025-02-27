@@ -1,0 +1,77 @@
+
+        body {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            background-color: #a7e6d7;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: red;
+
+        }
+        .container {
+            margin-top: 10px;
+        }
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .photo-container img {
+            border-radius: 10px;
+            transition: .5 ease;
+            width: 15rem;
+            
+        }
+
+        .texto{
+            font-size: 2.5em;
+            font-family: 'Lobster', cursive;
+            color: orange;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            
+        }
+
+        .photo-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .heart {
+        
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: latido 1s infinite;
+        }
+        
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        
+        .heart::after {
+            top: 0;
+            left: 50px;
+        }
+        
+
+        
+        
+
+        
